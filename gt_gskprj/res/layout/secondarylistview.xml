@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:weightSum="100">
+    <LinearLayout 
+        android:paddingTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal"
+       >
+        <TextView
+                android:id="@+id/remarks"
+                android:layout_width="0dp"
+                android:layout_weight="33"
+                android:layout_height="match_parent"
+               
+                android:gravity="center"
+                android:text="compliance"
+                android:textSize="15sp" >
+            </TextView>
+            
+          <TextView
+            android:id="@+id/compliance"
+               android:layout_width="0dp"
+                android:layout_weight="33"
+                android:layout_height="match_parent"
+            
+                android:gravity="center_vertical"
+                android:text="compliance"
+                android:textSize="15sp" >
+            </TextView>
+             <ToggleButton
+                android:id="@+id/toggleButton"
+               android:layout_width="0dp"
+                android:layout_weight="15"
+                android:layout_height="wrap_content"
+               
+                android:gravity="center"
+                android:text="Status"
+                android:textSize="15sp" >
+           </ToggleButton>
+             <ImageView
+                android:id="@+id/remarks"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:text="compliance"
+                android:background="@drawable/camera_list"
+                android:textSize="15sp" >
+          </ImageView>
+             <ImageView
+               android:id="@+id/cameraicon"
+                android:layout_width="0dp"
+                android:layout_weight="15"
+                android:layout_height="match_parent"
+               
+                android:gravity="center"
+                android:text="compliance"
+                android:background="@drawable/cam"
+                android:textSize="15sp" >
+          </ImageView>
+        
+        
+    </LinearLayout>
+
+    
+
+</LinearLayout>

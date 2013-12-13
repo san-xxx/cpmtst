@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Include Header Bar -->
+
+    <RelativeLayout
+        android:id="@+id/mainpage_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_header"
+        android:padding="5sp" >
+
+        <TextView
+            android:id="@+id/mainpage_remembermetext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Daily Entry"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/mainpage_intellogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_btn_bg" 
+            android:onClick="onButtonClick"/>
+    </RelativeLayout>
+
+    <!-- Include Fragmented dashboard -->
+    
+     <include layout="@layout/titlebg" />
+
+    <include layout="@layout/dailyactivityfragment_layout" />
+    
+    <Button
+            android:id="@+id/savebutton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+           	android:text=" Save "
+           	android:textSize="20sp"
+           	android:textStyle="bold"
+            android:onClick="onButtonClick"/>
+ 
+
+</LinearLayout>

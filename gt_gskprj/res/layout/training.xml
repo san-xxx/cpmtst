@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_header"
+    android:orientation="vertical" >
+
+    <!-- Include Header Bar -->
+
+    <RelativeLayout
+        android:id="@+id/training_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_header"
+        android:padding="5sp" >
+
+        <TextView
+            android:id="@+id/training_remembermetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Training"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/training_intellogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_btn_bg" 
+            android:onClick="onButtonClick"/>
+    </RelativeLayout>
+    
+     <include layout="@layout/titlebg" />
+
+    <LinearLayout
+        android:id="@+id/training_contentarea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/training_header"
+        android:padding="5sp"
+        android:weightSum="1.0" >
+
+        <RelativeLayout
+            android:id="@+id/training_1C"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3sp"
+            android:layout_weight=".5" >
+
+            <TextView
+                android:id="@+id/training_selectrsptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="34sp"
+                android:layout_marginTop="18sp"
+                android:text="Select RSP"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/training_selectrsptypetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/training_selectrsptext"
+                android:text="Select Training Type"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/training_selectrsptypetext"
+                android:text="Competency"
+                android:layout_marginTop="18sp"
+                android:textColor="#383838"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/training_2C"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5" >
+
+            <Spinner
+                android:id="@+id/training_rspbox"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <Spinner
+                android:id="@+id/training_rsptypebox"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp"
+                android:layout_below="@+id/training_rspbox" />
+            
+             <Spinner
+                android:id="@+id/training_rsplevel"
+                android:layout_width="fill_parent"
+                android:layout_height="55sp"
+                android:layout_below="@+id/training_rsptypebox" />
+
+            <Button
+                android:id="@+id/training_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/training_rsplevel"
+                android:layout_marginRight="3sp"
+                android:background="@drawable/innerbtn"
+                android:paddingBottom="10sp"
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"
+                android:paddingTop="10sp"
+                android:text="ADD"
+                android:textColor="#ffffff"
+                android:textSize="16sp" 
+                android:onClick="onButtonClick"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView  android:id="@android:id/list"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content" 
+    			android:divider="#3668a6"
+    		    android:dividerHeight="2dp"
+    	  		android:fastScrollEnabled="true"
+    		    android:smoothScrollbar="true"
+    		    android:choiceMode="singleChoice"
+    		    android:cacheColorHint="#00000000"
+    		    android:drawSelectorOnTop="false"
+    		  />
+
+</LinearLayout>

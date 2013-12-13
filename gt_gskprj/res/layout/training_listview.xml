@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_header"
+    android:orientation="vertical" >
+
+    <!-- Include Header Bar -->
+
+    <RelativeLayout
+        android:id="@+id/traininglist_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/traininglist_header"
+        android:background="@drawable/list_selector"
+        android:padding="5sp" >
+
+        <TextView
+            android:id="@+id/traininglist_rsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="RSP:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/traininglist_rspvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/traininglist_rsp"
+            android:layout_toRightOf="@+id/traininglist_rsp"
+            android:text="Hari Mohan"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/traininglist_rsptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traininglist_rsp"
+            android:layout_marginRight="5sp"
+            android:text="Training Type:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+                <TextView
+            android:id="@+id/traininglist_rsptypea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/traininglist_rsptype"
+            android:layout_marginRight="5sp"
+            android:text="Compentency:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+
+        <TextView
+            android:id="@+id/traininglist_rsptypevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/traininglist_rsptype"
+            android:layout_toRightOf="@+id/traininglist_rsptype"
+            android:text="Ultrabook"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+        
+                <TextView
+            android:id="@+id/traininglist_rsplevelvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/traininglist_rsptypea"
+            android:layout_toRightOf="@+id/traininglist_rsptypea"
+            android:text="Ultrabook"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/traininglist_deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/delete_btna" />
+    </RelativeLayout>
+
+</LinearLayout>

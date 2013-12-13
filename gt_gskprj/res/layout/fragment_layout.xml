@@ -1,0 +1,62 @@
+<com.cpm.gtgsk.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <!-- Daily Entry Button -->
+
+    <Button
+        android:id="@+id/dash_dailyentry"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_dailyentry"
+        android:text="Daily Entry" 
+        android:onClick="onButtonClick"/>
+
+    <!-- Download Button -->
+
+    <Button
+        android:id="@+id/dash_download"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_downloaddata"
+        android:text="Download Data" 
+        android:onClick="onButtonClick"/>
+
+    <!-- Upload Button -->
+
+    <Button
+        android:id="@+id/dash_upload"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_upload"
+        android:text="Upload Data" 
+        android:onClick="onButtonClick"/>
+
+    <!-- Auto Update Button -->
+
+    <Button
+        android:id="@+id/auto_update"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_autoupdate"
+        android:text="App Update" 
+        android:onClick="onButtonClick"/>
+
+    <!-- Exit Button -->
+
+    <Button
+        android:id="@+id/geotag"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/places_default"
+        android:gravity="center_horizontal"
+        android:text="Geo Tag" 
+        android:onClick="onButtonClick"/>
+
+    <!-- GEO Tag Button -->
+
+   <Button
+        android:id="@+id/exit"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_exit"
+        android:gravity="center_horizontal"
+        android:text="Exit" 
+        android:onClick="onButtonClick"/>
+</com.cpm.gtgsk.DashboardLayout>

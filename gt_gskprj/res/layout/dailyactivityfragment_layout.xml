@@ -1,0 +1,40 @@
+<com.cpm.gtgsk.DashboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#f8f9fe" >
+
+    <!-- Training Button -->
+
+    <TextView
+        android:id="@+id/btn_news_training"
+        style="@style/DashboardTextView"
+        android:paddingTop="40dp"
+        android:text="Store Images"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/btn_camera"
+        style="@style/DashboardButton"
+        android:background="@drawable/camera"
+        android:text="POSM Theme" />
+
+    <!-- Flex Button -->
+
+    <Button
+        android:id="@+id/btn_flex"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_flex"
+        android:text="Earned Point"
+        android:visibility="invisible" />
+
+    <!-- Sales Button -->
+
+    <Button
+        android:id="@+id/btn_salesthru"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/btn_salesthru"
+        android:text="Sales Out"
+        android:visibility="invisible" />
+
+</com.cpm.gtgsk.DashboardLayout>

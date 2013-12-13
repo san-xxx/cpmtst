@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_header"
+    android:orientation="vertical" >
+
+    <!-- Include Header Bar -->
+
+    <RelativeLayout
+        android:id="@+id/salesthru_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title_header"
+        android:padding="5sp" >
+
+        <TextView
+            android:id="@+id/salesthru_remembermetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="Sales Out"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/salesthru_intellogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_btn_bg"
+            android:onClick="onButtonClick" />
+    </RelativeLayout>
+    
+    <include layout="@layout/titlebg" />
+
+    <RelativeLayout
+        android:id="@+id/salesthru_contentarea"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/salesthru_header"
+        android:padding="10sp" >
+
+        <TextView
+            android:id="@+id/salesthru_selectrsptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="15sp"
+            android:text="OEM"
+            android:textColor="#383838"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/salesthru_rspbox"
+            android:layout_width="150sp"
+            android:layout_height="55sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/salesthru_selectrsptext" />
+
+        <TextView
+            android:id="@+id/salesthru_producttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/salesthru_rspbox"
+            android:paddingTop="15sp"
+            android:text="Product Type"
+            android:textColor="#383838"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/salesthru_producttypebox"
+            android:layout_width="150sp"
+            android:layout_height="55sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/salesthru_producttype"
+            android:layout_below="@+id/salesthru_selectrsptext" />
+
+        <TextView
+            android:id="@+id/salesthru_productsubtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/salesthru_producttypebox"
+            android:paddingTop="15sp"
+            android:text="Product Sub Type"
+            android:textColor="#383838"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/salesthru_productsubtypebox"
+            android:layout_width="150sp"
+            android:layout_height="55sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/salesthru_productsubtype"
+            android:layout_below="@+id/salesthru_producttypebox" />
+        
+        
+
+        <TextView
+            android:id="@+id/salesthru_selectrsptypetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/salesthru_productsubtypebox"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:text="QTD AMD Sales"
+            android:textColor="#383838"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/salesthru_rsptypebox"
+            android:layout_width="50sp"
+            android:layout_height="42sp"
+            android:layout_alignTop="@+id/salesthru_selectrsptypetext"
+            android:layout_below="@+id/salesthru_productsubtypebox"
+            android:layout_marginRight="10sp"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/salesthru_selectrsptypetext" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/salesthru_valuetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/salesthru_rsptypebox"
+            android:layout_below="@+id/salesthru_productsubtypebox"
+            android:layout_marginRight="5sp"
+            android:layout_toRightOf="@+id/salesthru_rsptypebox"
+            android:text="QTD Intel Sales"
+            android:textColor="#383838"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/salesthru_valuetextbox"
+            android:layout_width="50sp"
+            android:layout_height="42sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/salesthru_valuetext"
+            android:layout_below="@+id/salesthru_productsubtypebox"
+            android:layout_toRightOf="@+id/salesthru_valuetext" 
+            android:inputType="number">
+        </EditText>
+
+        <Button
+            android:id="@+id/salesthru_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/salesthru_valuetextbox"
+            android:layout_marginRight="3sp"
+            android:background="@drawable/innerbtn"
+            android:paddingBottom="7sp"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            android:paddingTop="7sp"
+            android:text="ADD"
+            android:textColor="#ffffff"
+            android:textSize="16sp" 
+            android:onClick="onButtonClick"/>
+    </RelativeLayout>
+
+   <ListView  android:id="@android:id/list"
+    		    android:layout_width="fill_parent"
+    		    android:layout_height="wrap_content" 
+    			android:divider="#3668a6"
+    		    android:dividerHeight="2dp"
+    	  		android:fastScrollEnabled="true"
+    		    android:smoothScrollbar="true"
+    		    android:choiceMode="singleChoice"
+    		    android:cacheColorHint="#00000000"
+    		    android:drawSelectorOnTop="false"
+    		     />
+
+</LinearLayout>

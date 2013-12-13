@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login_header"
+    android:orientation="vertical" >
+
+    <!-- Include Header Bar -->
+
+    <RelativeLayout
+        android:id="@+id/posmthemelistview_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/posmthemelistview_header"
+        android:background="@drawable/list_selector"
+        android:padding="5sp" >
+
+        <TextView
+            android:id="@+id/posmthemelistview_rsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5sp"
+            android:text="OEM:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_rspvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/posmthemelistview_rsp"
+            android:layout_toRightOf="@+id/posmthemelistview_rsp"
+            android:text="Last Q Sales"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_rsptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posmthemelistview_rsp"
+            android:layout_marginRight="5sp"
+            android:text="Product Type:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posmthemelistview_rsptype"
+            android:layout_marginRight="5sp"
+            android:text="Product Sub Type:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_amd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posmthemelistview_value"
+            android:layout_marginRight="5sp"
+            android:text="QTD AMD Sales:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_intel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posmthemelistview_amd"
+            android:layout_marginRight="5sp"
+            android:text="QTD Intel Sales:"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_rsptypevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/posmthemelistview_rsptype"
+            android:layout_toRightOf="@+id/posmthemelistview_rsptype"
+            android:text="14"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_valuetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/posmthemelistview_value"
+            android:layout_toRightOf="@+id/posmthemelistview_value"
+            android:text="15"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_amdtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/posmthemelistview_amd"
+            android:layout_toRightOf="@+id/posmthemelistview_amd"
+            android:text="15"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/posmthemelistview_inteltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/posmthemelistview_intel"
+            android:layout_toRightOf="@+id/posmthemelistview_intel"
+            android:text="15"
+            android:textColor="#2c2c2c"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/posmthemelistview_deletebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/posmthemelistview_amdtext"
+            android:background="@drawable/delete_btna" />
+
+    </RelativeLayout>
+
+</LinearLayout>
